@@ -236,6 +236,7 @@ def chat():
     input_sentence = ''
     #while(1):
     if input_review == 'quit':return 'exit'
+    
     try:
         input_sentence = cleanString(input_review)
         output_words = evaluate(encoder, decoder, searcher, voc, input_sentence)
