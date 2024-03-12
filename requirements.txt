@@ -1,0 +1,10 @@
+sagemaker
+flask
+joblib
+jsonify
+numpy
+pandas
+torch
+ipykernel
+
+

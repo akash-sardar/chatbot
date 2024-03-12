@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Akash's chatbot</title>
+  </head>
+  <body>
+    <h1> Chat all you want:</h1>
+    {% if response%}
+        <p>{{response}}</p>
+    {% endif %}
+    <form method = "post" action = "/chat">
+       <label>CHATBOX</label><br>
+       <input type="text" name="chatbox"><br><br>
+
+       <input type="submit" value="send"><br><br>
+
+    </form>
+  </body>
+</html>
