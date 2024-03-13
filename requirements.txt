@@ -2,7 +2,6 @@ flask
 joblib
 numpy
 pandas
-torch
 ipykernel
 
 
