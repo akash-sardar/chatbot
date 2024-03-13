@@ -1,6 +1,5 @@
 flask
 joblib
-jsonify
 numpy
 pandas
 torch
