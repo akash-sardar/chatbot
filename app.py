@@ -215,7 +215,7 @@ def chat():
     voc = Vocabulary(corpus_name)
     #loadFilename = 'D:\\PracticeProjects\\Chatbot\\chatbotAPI\\chatbot_model\\movie_corpus\\2-2_500\\4000_checkpoint.tar'
     loadFilename = '/home/ubuntu/4000_checkpoint.tar'
-    checkpoint = torch.load(loadFilename)
+    checkpoint = torch.load(loadFilename, map_location=torch.device('cpu'))
     encoder_sd = checkpoint['en']
     decoder_sd = checkpoint['de']
     encoder_optimizer_sd = checkpoint['en_opt']
