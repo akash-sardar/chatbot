@@ -213,7 +213,8 @@ def chat():
     corpus_name = 'movie_corpus'
     max_length = 10
     voc = Vocabulary(corpus_name)
-    loadFilename = 'D:\\PracticeProjects\\Chatbot\\chatbotAPI\\chatbot_model\\movie_corpus\\2-2_500\\4000_checkpoint.tar'
+    #loadFilename = 'D:\\PracticeProjects\\Chatbot\\chatbotAPI\\chatbot_model\\movie_corpus\\2-2_500\\4000_checkpoint.tar'
+    loadFilename = '/home/ubuntu/4000_checkpoint.tar'
     checkpoint = torch.load(loadFilename)
     encoder_sd = checkpoint['en']
     decoder_sd = checkpoint['de']
@@ -251,4 +252,5 @@ def chat():
   
 
 if __name__ == '__main__':
-    app.run(port=5000, debug=True)
+    #app.run(port=5000, debug=True)
+    app.run(host = '0.0.0.0', port=8080)
